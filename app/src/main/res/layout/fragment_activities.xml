@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.ActivitiesFragment">
+
+
+    <RelativeLayout
+        android:layout_width="398dp"
+        android:layout_height="407dp">
+
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <TextView
+            android:id="@+id/someText"
+            android:layout_width="361dp"
+            android:layout_height="87dp"
+            android:text="@string/fragment_Activities"
+            android:textColor="@color/colorRed"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:id="@+id/add_act_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/someText"
+            android:layout_alignStart="@+id/someText"
+            android:layout_marginStart="171dp"
+            android:layout_marginTop="-83dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_add_black_24dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMenuA"
+            android:layout_width="match_parent"
+            android:layout_height="407dp"
+            android:layout_below="@id/add_act_image"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="33dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

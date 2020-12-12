@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lnr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <ImageButton
+                   android:layout_width="65dp"
+                   android:layout_height="65dp"
+                   android:id="@+id/photo"
+                   android:layout_marginRight="1dp"
+                   android:background="@color/colorWhite"
+                   android:onClick="openFragAccount"
+                   android:src="@drawable/marwen"
+                   android:textColor="@color/colorWhite" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="change"
+                   android:id="@+id/changeImage"
+                   android:layout_gravity="center"
+                   android:textSize="14sp"/>
+
+
+           </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/txtMainFirstName"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="nom"
+                android:textColor="@color/colorRed"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtMainLastName"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="prenom"
+                android:textColor="@color/colorRed"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/lnr1"
+        android:layout_margin="5dp"
+        android:background="@color/colorRed" />
+
+
+    <LinearLayout
+        android:id="@+id/lnr3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btn_fragmentForYou"
+            android:layout_width="19dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:onClick="openFragForYou"
+            android:text="@string/fragment_for_you"
+            android:textColor="@color/colorRed"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorRedEnd" />
+
+        <Button
+            android:id="@+id/btn_fragmentHotels"
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:onClick="openFragHotels"
+            android:text="@string/fragment_hotels"
+            android:textColor="@color/colorRed"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorRedEnd" />
+
+        <Button
+            android:id="@+id/btn_fragmentRestaurants"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:onClick="openFragRestaurants"
+            android:text="@string/fragment_restaurants"
+            android:textColor="@color/colorRed"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorRedEnd" />
+
+        <Button
+            android:id="@+id/btn_fragmentActivities"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:onClick="openFragActivities"
+            android:text="@string/fragment_Activities"
+            android:textColor="@color/colorRed"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lnr2"
+        android:layout_below="@+id/lnr3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/colorWhite" />
+
+    <LinearLayout
+        android:id="@+id/lnr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btn_fragmentHome"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:onClick="openFragHome"
+            android:text="@string/fragment_home"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite" />
+
+
+        <Button
+            android:id="@+id/btn_fragmentAccount"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:onClick="openFragAccount"
+            android:text="@string/fragment_account"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btn_fragmentAssistant"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:onClick="openFragAssistant"
+            android:text="@string/fragment_assistant"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

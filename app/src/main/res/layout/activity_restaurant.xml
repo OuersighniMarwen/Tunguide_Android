@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.RestaurantActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="106dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="50dp"
+        app:srcCompat="@drawable/default_restaurant" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/rest_name"
+        android:hint="Restaurant's Name"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/rest_adresse"
+        android:hint="Restaurant's Address"/>
+
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/rest_star"
+        android:hint="Forks"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/upload_rest"
+        android:textColor="@color/colorRed"
+        android:text="Upload Restaurant Image"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/add_rest"
+        android:textColor="@color/colorTextWhite"
+        android:text="Add Restaurant"
+        android:background="@color/colorRed"/>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.HotelActivity">
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/hotel_name"
+        android:hint="Hotel name"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/hotel_adresse"
+        android:hint="Hotel Adresse"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/hotel_price"
+        android:hint="Hotel Price"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/hotel_star"
+        android:hint="Hotel stars"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/upload_hotel"
+        android:text="Upload Hotel Image"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/add_hotel"
+        android:text="Add hotel"/>
+
+</LinearLayout>

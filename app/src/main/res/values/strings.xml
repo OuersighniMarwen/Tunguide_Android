@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">TunGuideF</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="btnSignUp">Sign Up</string>
+    <string name="btnSignIn">Sign In</string>
+    <string name="rememberMe">Remember Me</string>
+    <string name="btnSignUpCancel">Cancel</string>
+
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_pays">Country</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_password">Password</string>
+
+    <string name="fragment_home">Home</string>
+    <string name="fragment_favourite">Favorites</string>
+    <string name="fragment_account">Account</string>
+    <string name="fragment_assistant">Assistant</string>
+    <string name="fragment_settings">Settings</string>
+
+    <string name="fragment_for_you">For You</string>
+    <string name="fragment_hotels">Hotels</string>
+    <string name="fragment_restaurants">Restaurants</string>
+    <string name="fragment_Activities">Activities</string>
+
+
+</resources>
